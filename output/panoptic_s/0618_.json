@@ -1,0 +1,176 @@
+{
+	"segmentInfo": [
+		{
+			"id": 1,
+			"isthing": true,
+			"score": 0.9917347431182861,
+			"category_id": 2,
+			"instance_id": 0,
+			"area": 11528.0
+		},
+		{
+			"id": 2,
+			"isthing": true,
+			"score": 0.9656747579574585,
+			"category_id": 2,
+			"instance_id": 1,
+			"area": 1652.0
+		},
+		{
+			"id": 3,
+			"isthing": true,
+			"score": 0.9586911797523499,
+			"category_id": 2,
+			"instance_id": 2,
+			"area": 432.0
+		},
+		{
+			"id": 4,
+			"isthing": true,
+			"score": 0.948314368724823,
+			"category_id": 2,
+			"instance_id": 3,
+			"area": 742.0
+		},
+		{
+			"id": 5,
+			"isthing": true,
+			"score": 0.9214287400245667,
+			"category_id": 2,
+			"instance_id": 4,
+			"area": 1079.0
+		},
+		{
+			"id": 6,
+			"isthing": true,
+			"score": 0.894856333732605,
+			"category_id": 2,
+			"instance_id": 5,
+			"area": 1437.0
+		},
+		{
+			"id": 7,
+			"isthing": true,
+			"score": 0.8656487464904785,
+			"category_id": 9,
+			"instance_id": 6,
+			"area": 625.0
+		},
+		{
+			"id": 8,
+			"isthing": true,
+			"score": 0.6450191140174866,
+			"category_id": 9,
+			"instance_id": 7,
+			"area": 97.0
+		},
+		{
+			"id": 9,
+			"isthing": true,
+			"score": 0.6019114851951599,
+			"category_id": 9,
+			"instance_id": 8,
+			"area": 128.0
+		},
+		{
+			"id": 10,
+			"isthing": true,
+			"score": 0.5909353494644165,
+			"category_id": 9,
+			"instance_id": 9,
+			"area": 332.0
+		},
+		{
+			"id": 11,
+			"isthing": true,
+			"score": 0.5743315815925598,
+			"category_id": 9,
+			"instance_id": 10,
+			"area": 193.0
+		},
+		{
+			"id": 12,
+			"isthing": true,
+			"score": 0.5673062205314636,
+			"category_id": 2,
+			"instance_id": 11,
+			"area": 5093.0
+		},
+		{
+			"id": 13,
+			"isthing": true,
+			"score": 0.5489521026611328,
+			"category_id": 2,
+			"instance_id": 12,
+			"area": 1066.0
+		},
+		{
+			"id": 14,
+			"isthing": true,
+			"score": 0.5425248146057129,
+			"category_id": 9,
+			"instance_id": 13,
+			"area": 91.0
+		},
+		{
+			"id": 15,
+			"isthing": true,
+			"score": 0.5359606742858887,
+			"category_id": 2,
+			"instance_id": 14,
+			"area": 1167.0
+		},
+		{
+			"id": 16,
+			"isthing": true,
+			"score": 0.5148301720619202,
+			"category_id": 9,
+			"instance_id": 15,
+			"area": 318.0
+		},
+		{
+			"id": 17,
+			"isthing": true,
+			"score": 0.5094600915908813,
+			"category_id": 9,
+			"instance_id": 16,
+			"area": 922.0
+		},
+		{
+			"id": 18,
+			"isthing": false,
+			"category_id": 21,
+			"area": 1002893.0
+		},
+		{
+			"id": 19,
+			"isthing": false,
+			"category_id": 37,
+			"area": 469315.0
+		},
+		{
+			"id": 20,
+			"isthing": false,
+			"category_id": 38,
+			"area": 15160.0
+		},
+		{
+			"id": 21,
+			"isthing": false,
+			"category_id": 40,
+			"area": 351902.0
+		},
+		{
+			"id": 22,
+			"isthing": false,
+			"category_id": 44,
+			"area": 24294.0
+		},
+		{
+			"id": 23,
+			"isthing": false,
+			"category_id": 50,
+			"area": 179756.0
+		}
+	]
+}

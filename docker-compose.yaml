@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .
+    runtime: nvidia
+    ports:
+      - "22111:22111"
+    command: python api.py
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Panoptic Segmentation</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title" align="center">Panoptic Segmentation</h2>
+            <div class="row" align="center">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group" align="center">
+                        <input type="file" name="image" id="image" class="form-control">
+                    </div>
+                    <div class="form-group" align="center">
+                        <button type="submit" id="predict-button" class="btn btn-primary">Predict</button>
+                    </div>
+                </form>
+            </div>
+            {% if prediction == 1 %}
+            <div class="row" align="center">
+                <div class="col-md-6">
+                    <img src="{{url_for('static', filename=image_loc)}}" alt="input image" class="img-thumbnail">
+                </div>
+                <div class="col-md-6">
+                    <img src="{{url_for('static', filename=image_loc2)}}" alt="output image" class="img-thumbnail">
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>

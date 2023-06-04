@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panoptic Segmentation</title>
+  <style>
+    body {
+        background: rgb(26, 0, 110);  
+        background-position: center;
+        text-align: center;
+    }
+    
+    h2 {
+        color: beige;
+        padding: 30px;
+        margin: auto;
+        display: block;
+        font-size: 2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    h3 {
+      color: aliceblue;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* This will create two columns */
+    }
+    .section {
+        padding: 50px;
+        margin-top: 90px; /* you can adjust the value to your liking */
+        border: 2px dashed #3f51b5;
+        border-radius: 10px;
+    }
+    .predict-button {
+        color: rgba(0, 0, 0, 0.849);
+        transform: scale(2);
+    }
+    #image {
+        color: rgba(255, 255, 255, 0.849);
+        transform: scale(2);
+    }
+    #displayed-image {
+        object-fit: contain;
+        padding: 50px;
+        object-fit: contain;
+        width: 100%;
+        max-width: 500px;
+        max-height: 400px;
+        margin: auto;
+        display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>Panoptic Segmentation</h2>
+  <form method="post" enctype="multipart/form-data">
+    <div id="image-section" class="section">
+      <input type="file"  name="image" id="image" class="form-control" onchange="displayImage()">
+
+      <br>
+      <img  id="displayed-image" style="display:none;">
+
+      {% if image_loc %}
+      <div >
+        <img id="displayed-image" src="{{ url_for('static', filename='raw_images/'+image_loc) }}" >
+      </div>
+  
+    
+      <h3 class="h3 mb-3 font-weight-normal">Raw Image</h3>
+    {% endif %}
+
+    {% if r_i_f %}
+    {% for image_filename in r_i_f %}
+    <img id="displayed-image" src="{{url_for('static', filename='raw_images/'+image_filename)}}" >
+    {% endfor %}
+    {% endif %}
+
+    </div>
+    <div id="predict-section" class="section">
+
+      <button type="submit" class="predict-button" onclick="predict()">Predict</button>
+      {% if image_loc2 %}
+      <div >
+        <img id="displayed-image"  src="{{url_for('static', filename='processed_images/'+image_loc2)}}" >
+      </div>
+  
+    
+
+      <h3 class="h3 mb-3 font-weight-normal">Proccessed Image</h3>
+    {% endif %}
+
+    {% if p_i_f %}
+    {% for image_filename in p_i_f %}
+    <img id="displayed-image" src="{{url_for('static', filename='processed_images/'+image_filename)}}" >
+    {% endfor %}
+    {% endif %}
+
+    </div>
+
+  </form>
+
+
+  <script>
+    function displayImage() {
+        var image = document.getElementById("image");
+        var img = document.getElementById("displayed-image");
+        img.src = URL.createObjectURL(image.files[0]);
+        img.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

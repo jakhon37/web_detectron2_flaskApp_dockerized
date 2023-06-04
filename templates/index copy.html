@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panoptic Segmentation</title>
+  <style>
+
+
+
+    
+    body {
+        background: rgb(26, 0, 110);  /*url('https://images.pexels.com/photos/2734512/pexels-photo-2734512.jpeg'); */
+        background-position: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    h2 {
+        color: beige;
+        padding: 30px;
+        margin: auto;
+        display: block;
+        font-size: 2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    
+    
+    #image-section {
+        padding: 50px;
+        margin-top: 90px; /* you can adjust the value to your liking */
+        flex: 1;    
+        border: 2px dashed #3f51b5;
+        border-radius: 10px;
+    }
+    
+    
+    #predict-section {
+        padding: 50px;
+        margin-top: 90px; 
+        flex: 1;
+        border: 2px dashed #3f51b5;
+        border-radius: 10px;
+    }
+    .predict-button {
+        color: rgba(0, 0, 0, 0.849);
+        transform: scale(2);
+    }
+    #image {
+        color: rgba(255, 255, 255, 0.849);
+
+        transform: scale(2);
+    }
+    #displayed-image {
+        object-fit: contain;
+        padding: 50px;
+        object-fit: contain;
+        width: 100%;
+        max-width: 500px;
+        max-height: 400px;
+        margin: auto;
+        display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>Panoptic Segmentation</h2>
+  <div id="image-section">
+    <input type="file" id="image" onchange="displayImage()">
+    <br>
+    <img id="displayed-image" style="display:none;">
+  </div>
+  <div id="predict-section">
+    <button type="submit" class="predict-button" onclick="predict()">Predict</button>
+  </div>
+  {% if image_loc2 %}
+
+
+    
+  <div class="form-row">
+
+    <div class="col-14">
+      <img src="./static/{{image_loc2}}" class="img-fluid">
+    </div>
+  </div>
+
+  
+    <h3 class="h3 mb-3 font-weight-normal">Prediction: {{prediction}}</h3>
+  {% endif %}
+
+c
+</body>
+</html>

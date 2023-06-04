@@ -1,0 +1,54 @@
+{
+	"segmentInfo": [
+		{
+			"id": 1,
+			"isthing": true,
+			"score": 0.9850229620933533,
+			"category_id": 2,
+			"instance_id": 0,
+			"area": 2619.0
+		},
+		{
+			"id": 2,
+			"isthing": true,
+			"score": 0.9599996209144592,
+			"category_id": 7,
+			"instance_id": 1,
+			"area": 3675.0
+		},
+		{
+			"id": 3,
+			"isthing": true,
+			"score": 0.6008429527282715,
+			"category_id": 2,
+			"instance_id": 2,
+			"area": 39.0
+		},
+		{
+			"id": 4,
+			"isthing": true,
+			"score": 0.5972704291343689,
+			"category_id": 2,
+			"instance_id": 3,
+			"area": 110.0
+		},
+		{
+			"id": 5,
+			"isthing": false,
+			"category_id": 21,
+			"area": 20343.0
+		},
+		{
+			"id": 6,
+			"isthing": false,
+			"category_id": 37,
+			"area": 40713.0
+		},
+		{
+			"id": 7,
+			"isthing": false,
+			"category_id": 40,
+			"area": 54761.0
+		}
+	]
+}
