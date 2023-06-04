@@ -1,8 +1,8 @@
 # Web Detectron2 Flask App Dockerized
 <p float="left">
-  <img src="./readme_source/unnamed.png" width="500" />
-  <img src="./readme_source/unnamed2.png" width="500" />
-
+  <img src="./readme_source/demo1.png"/>
+<!--   <img src="./readme_source/unnamed2.png" width="500" />
+ -->
 </p>
 
 
