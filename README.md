@@ -11,12 +11,23 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them:
 
 ```bash
-RUN pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+Python==3.8
+pytorch 1.13.1+cu116
+
+```
+
+
+Installing
+A step by step series of examples that tell you how to get a development environment running:
+
+
+
+# pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 
 # Install the required packages
-RUN pip install --no-cache-dir -r requirements.txt
+# pip install --no-cache-dir -r requirements.txt
 
-RUN git clone https://github.com/facebookresearch/detectron2.git
-RUN python -m pip install -e detectron2
+# git clone https://github.com/facebookresearch/detectron2.git
+# python -m pip install -e detectron2
 
-RUN apt-get update && apt-get install -y libgl1-mesa-glx
+# apt-get update && apt-get install -y libgl1-mesa-glx
